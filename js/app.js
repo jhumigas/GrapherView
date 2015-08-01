@@ -1,0 +1,1 @@
+  var app = angular.module('GrapherApp', ['chart.js', 'ui.bootstrap','ui.bootstrap.modal']);
