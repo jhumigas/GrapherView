@@ -8,9 +8,14 @@
               
             <tr ng-repeat="set in equation track by $index">
               <td>
-              <button type="button"class="btn btn-warning btn-md text-left" ng-click="remove($index)"><span class="glyphicon glyphicon-remove-circle col-xs-2" aria-hidden="true"></span></button>
+              
               </td>
-              <td><input class="form-control" type="text" placeholder="f(y)" ng-model="equation[$index]"></td>
+              <td class="input-group">
+                <span class="input-group-btn">
+                  <button type="button"class="btn btn-warning form-control" ng-click="remove($index)"><span class="glyphicon glyphicon-remove-circle col-xs-2" aria-hidden="true"></span></button>
+                 </span>
+                <input class="form-control" type="text" placeholder="f(y)" ng-model="equation[$index]">
+              </td>
             </tr>
           </table>
           </div>
