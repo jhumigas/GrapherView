@@ -83,7 +83,7 @@ app.directive('fxbetaApp',['$timeout',
                     scope.isCollapsed= true;
                     scope.isCollapsedG= true;
                     scope.update=function(){ 
-                      scope.isCollapsedG= false;  
+                      //scope.isCollapsedG= false;  
                       scope.updateFunction();
                       scope.updateLabels();
                       scope.updateData();
