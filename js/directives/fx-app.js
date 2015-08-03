@@ -42,7 +42,7 @@ app.directive('fxApp',['$timeout',
                     scope.updateLabels = function(){
                       scope.labels = [];
                       var i;
-                      for(i=0;i<=scope.precision;i++){ 
+                      for(i=0;i<scope.precision;i++){ 
                         var str = i*(scope.xmax-scope.xmin)/scope.precision;
                         str+= parseInt(scope.xmin);
                         scope.labels.push(str.toString().substr(0,5));
