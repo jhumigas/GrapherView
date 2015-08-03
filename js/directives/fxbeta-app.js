@@ -18,7 +18,7 @@ app.directive('fxbetaApp',['$timeout',
                     scope.variable ="y";
                     scope.fx= ["fy"];
                     scope.xmin= 0;
-                    scope.xmax= 100;
+                    scope.xmax= 10;
                     scope.precision= 10;
                     scope.javafx = ['abs','acos','asin','atan','cos','sin','tan','exp','log','random','sqrt'];
                     scope.labels = ['0', '1', '2', '3', '4', '5', '6','7','8','9','10'];
