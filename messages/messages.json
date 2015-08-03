@@ -13,7 +13,7 @@
     "from": "Jason Cornwell",
     "source": "Whatsapp",
     "datetime": 1420809000000,
-    "subject": "Grapher Marathon",
+    "title": "Grapher Marathon",
     "message": "Are you ready for the biggest challenge of your whole time. Digital Tech year is on the way, get ready",
     "unread": true,
     "status": true
@@ -23,7 +23,7 @@
     "from": "Google Voice",
     "source": "Hangout",
     "datetime": 1420694340000,
-    "subject": "New voicemail from (877) 466-4411 at 5:19 AM",
+    "title": "New voicemail from (877) 466-4411 at 5:19 AM",
     "message": "Missed call from: (877) 466-4411 at 9:05 AM",
     "unread": false,
     "status": false
@@ -33,7 +33,7 @@
     "from": "Antwan Patton",
     "source": "Twitter",
     "datetime": 1420543620000,
-    "subject": "Shutterbugg",
+    "title": "Shutterbugg",
     "message": "Hey man, did you have a chance to check out the new app? Just released it for iOS and Android. Curious to hear what you think!",
     "unread": false,
     "status": true
@@ -43,7 +43,7 @@
     "from": "Tauheed Epps",
     "source": "Facebook",
     "datetime": 1420509780000,
-    "subject": "I'm different EOM",
+    "title": "I'm different EOM",
     "message": "Pluk Squalala",
     "unread": false,
     "status": false
@@ -53,7 +53,7 @@
     "from": "Emily Toff",
     "source": "GothamApp",
     "datetime": 1420386780000,
-    "subject": "Why so serious?",
+    "title": "Why so serious?",
     "message": "I finally saw that movie you were talking about and really liked it! Thanks for the recommendation.",
     "unread": false,
     "status": true
@@ -63,7 +63,7 @@
     "from": "Arielle Reinstein",
     "source":"Via",
     "datetime": 1420224600000,
-    "subject": "This weekend",
+    "title": "This weekend",
     "message": "Hi, are you around this weekend? Want to check out the new coffee shop that opened down the street?",
     "unread": false,
     "status": true

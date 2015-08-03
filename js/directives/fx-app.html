@@ -9,6 +9,10 @@
                 <input class="form-control" type="text" placeholder="f(y)" ng-model="equation">
               </div>
               <div class="col-xs-2">
+                <label for="ex1">Variable</label>
+                <input class="form-control" type="text" placeholder="{{variable}}" readonly>
+              </div>
+              <div class="col-xs-2">
                 <label for="ex2">minValue</label>
                 <input class="form-control" id="ex2" type="text" placeholder="0" ng-model="xmin">
               </div>
@@ -46,11 +50,11 @@
     <div class="table-responsive">
     <table class="table table-responsive table-condensed" id="tabledata">
             <tr>
-              <th id="tabledataheader"> y </th>
+              <th id="tabledataheader"> {{variable}} </th>
               <td ng-repeat="set in labels track by $index" id="tabledata">{{labels[$index]}}</td>
             </tr>
             <tr ng-repeat="dataSet in data">
-              <th id="tabledataheader"> f(y) </th>
+              <th id="tabledataheader"> f({{variable}}) </th>
               <td ng-repeat="set in dataSet track by $index" id="tabledata"><span style="text-align: right;">{{data[$parent.$index][$index]}}</span></td>
             </tr>
           </table>

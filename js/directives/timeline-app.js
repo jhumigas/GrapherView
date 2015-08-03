@@ -6,6 +6,14 @@ app.directive('timelineApp',['messages',function(messages) {
       messages.success(function(data){
         scope.feeds= data;
       });
+      scope.parity=function(test){
+        if (test % 2 == 0){
+          return "timeline";
+        }
+        else{
+           return "timeline-inverted";
+        }
+      }
    
     }
   }; 

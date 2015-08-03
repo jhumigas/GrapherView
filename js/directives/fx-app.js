@@ -16,7 +16,7 @@ app.directive('fxApp',['$timeout',
                      };
                     scope.equation = "y";
                     scope.variable ="y";
-                    scope.fx= "fy ";
+                    scope.fx= "fy";
                     scope.xmin= 0;
                     scope.xmax= 100;
                     scope.precision= 10;
@@ -52,7 +52,7 @@ app.directive('fxApp',['$timeout',
                       scope.data[0]=[];
                         var j;
                         for(j=0;j<scope.labels.length;j++){
-                          var res = scope.fx.replace(new RegExp('y','g'),scope.labels[j]);
+                          var res = scope.fx.replace(new RegExp(scope.variable,'g'),scope.labels[j]);
                           scope.data[0].push(eval(res));
                         }
                     };

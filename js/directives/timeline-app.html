@@ -3,7 +3,7 @@
     <h1 id="timeline">Grapher Feed</h1>
   </div>
   <ul class="timeline" ng-repeat="feed in feeds">
-    <li class="timeline">
+    <li class="{{parity($index)}}">
       <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
