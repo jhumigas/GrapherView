@@ -80,16 +80,13 @@ app.directive('fxbetaApp',['$timeout',
                         scope.equation.splice(index,1);
                         scope.data.splice(index,1);
                     };
-                    scope.isCollapsed= true;
-                    scope.isCollapsedG= true;
                     scope.update=function(){ 
-                      //scope.isCollapsedG= false;  
                       scope.updateFunction();
                       scope.updateLabels();
                       scope.updateData();
                       scope.clearEquation();
                     };
-                },2500);
+                },50);
             
         			
           }

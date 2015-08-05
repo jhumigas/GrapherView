@@ -99,8 +99,8 @@
             </div>
             <div class="row">
                 <!-- -->
-                <div class="col-sm-4 portfolio-item" ng-repeat="item in portofolio">
-                    <a href="{{item.link}}" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-12 portfolio-item" ng-repeat="item in portofolio" >
+                    <a href="" class="portfolio-link" data-toggle="modal" ng-init="visibil=false" ng-click="visibil=!visibil">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -108,6 +108,9 @@
                         </div>
                         <img ng-src="{{item.imgsrc}}" class="img-responsive" alt="">
                     </a>
+                    <div collapse="visibil" ng-include="item.template">
+                        <hr>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,132 +253,7 @@
     </div>
 
     <!-- Portfolio Modals -->
-    <div>
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">  
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Fx App</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            
-                            <p>Basic tool to plot fonctions. Created with <a href="http://jtblin.github.io/angular-chart.js/">Angular Chart.js</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Based on
-                                    <strong><a href="#">JavaScript</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="#">{{date|date:'mediumDate'}}</a>
-                                    </strong>
-                                </li>
-                                <li>Version:
-                                    <strong><a href="#">1.0</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- FxApp-->
-                        <h1> put fx here </h1>  
-                        <fx-app></fx-app>        
-                        <!-- -->
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Agora</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Agora contains reviews from the Grapher community. Send us an email, you might be the next lucky guy</p>
-                            <ul class="list-inline item-details">
-                                <li>Based on
-                                    <strong><a href="#">Timeline based</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="#">{{date|date:'mediumDate'}}</a>
-                                    </strong>
-                                </li>
-                                <li>Version:
-                                    <strong><a href="#">1.0</a>
-                                    </strong>
-                                </li>
-                            </ul>        
-                             <!-- -->
-                             </div>
-                            
-                    </div>
-                </div>
-                <timeline-app></timeline-app>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                          
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Multiple Functions</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>This tool is designed to Compare multiple function. It is based on FxApp.</p>
-                            <ul class="list-inline item-details">
-                                <li>Based on
-                                    <strong><a href="#">AngularCharts</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="#">{{date|date:'mediumDate'}}</a>
-                                    </strong>
-                                </li>
-                                <li>Version:
-                                    <strong><a href="#">0.0</a>
-                                    </strong>
-                                </li>
-                            </ul> 
-                            </div>
-                    </div>
-                </div>
-                <fxbeta-app></fxbeta-app>
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                   
-            </div>
-        </div>
-    </div>
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     

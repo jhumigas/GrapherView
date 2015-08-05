@@ -56,15 +56,12 @@ app.directive('fxApp',['$timeout',
                           scope.data[0].push(eval(res));
                         }
                     };
-                    scope.isCollapsed= true;
-                    scope.isCollapsedG= true;
                     scope.update=function(){
-                      scope.isCollapsedG= false;  
                       scope.updateFunction();
                       scope.updateLabels();
                       scope.updateData();
                     };
-                },1500);
+                },50);
             
         			
           }

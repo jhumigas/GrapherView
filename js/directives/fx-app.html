@@ -37,15 +37,16 @@
     </div>
     <div>
       <div class="panel panel-default">
-        <div class="panel-heading text-left"> <a href="#" ng-click="isCollapsedG=!isCollapsedG"><b>Graph</b></a> </div>
-        <div class="panel-body" collapse="isCollapsedG">
-          <canvas id="tables" class="chart chart-line" data="data" labels="labels" options="optionsChart" width="400" height="400"></canvas>
+        <div class="panel-heading text-left"> <a ng-init="v_a0=false" ng-click="v_a0=!v_a0"><b>Graph</b></a> </div>
+        <div class="panel-body" ng-hide="v_a0">
+            <canvas id="tables" class="chart chart-line" data="data" labels="labels" options="optionsChart"></canvas>
+
         </div>
       </div>
     </div>
     <div class="panel panel-default">
-    <div class="panel-heading text-left"> <a href="#" ng-click="isCollapsed=!isCollapsed"><b>Function data</b></a> </div>
-    <div class="panel-body" collapse="isCollapsed">
+    <div class="panel-heading text-left"> <a ng_init="v_a1=true "ng-click="v_a1=!v_a1"><b>Function data</b></a> </div>
+    <div class="panel-body" ng-hide="v_a1">
       
     <div class="table-responsive">
     <table class="table table-responsive table-condensed" id="tabledata">
