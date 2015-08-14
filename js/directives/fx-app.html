@@ -34,22 +34,23 @@
               </div>
           </div>
       </div>
-    </div>
-    <div>
-      <div class="panel panel-default">
-        <div class="panel-heading text-left"> <a ng-init="v_a0=false" ng-click="v_a0=!v_a0"><b>Graph</b></a> </div>
-        <div class="panel-body" ng-hide="v_a0">
-            <canvas id="tables" class="chart chart-line" data="data" labels="labels" options="optionsChart"></canvas>
+    <!-- </div> -->      
+</div>
+<div>
+  <div class="panel panel-default">
+    <div class="panel-heading text-left"> <a ng-init="v_a0=false" ng-click="v_a0=!v_a0"><b>Graph</b></a> </div>
+    <div class="panel-body" ng-hide="v_a0">
+        <canvas id="tables" class="chart chart-line" data="data" labels="labels" options="optionsChart"></canvas>
 
-        </div>
-      </div>
     </div>
-    <div class="panel panel-default">
+  </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading text-left"> <a ng_init="v_a1=true "ng-click="v_a1=!v_a1"><b>Function data</b></a> </div>
     <div class="panel-body" ng-hide="v_a1">
       
-    <div class="table-responsive">
-    <table class="table table-responsive table-condensed" id="tabledata">
+      <div class="table-responsive">
+          <table class="table table-responsive table-condensed" id="tabledata">
             <tr>
               <th id="tabledataheader"> {{variable}} </th>
               <td ng-repeat="set in labels track by $index" id="tabledata">{{labels[$index]}}</td>
@@ -59,8 +60,6 @@
               <td ng-repeat="set in dataSet track by $index" id="tabledata"><span style="text-align: right;">{{data[$parent.$index][$index]}}</span></td>
             </tr>
           </table>
+      </div>
     </div>
-    </div>
-    </div>
-
-  </div>
+</div>

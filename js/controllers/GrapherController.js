@@ -3,19 +3,19 @@ app.controller('GrapherController',['$scope','$timeout' ,function ($scope,$timeo
   {
     link: '#portfolioModal1',
     imgsrc: 'img/portfolio/cabin.png',
-    template: 'a.html',
+    template: 'js/views/a.html',
     visibility: false
   },
   {
     link: '#portfolioModal3',
     imgsrc: 'img/portfolio/circus.png',
-    template: 'c.html',
+    template: 'js/views/c.html',
     visibility: false
   },
   {
     link: '#portfolioModal2',
     imgsrc: 'img/portfolio/cake.png',
-    template: 'b.html',
+    template: 'js/views/b.html',
     visibility: false
   }
   ];
