@@ -92,7 +92,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                    <div class="col-lg-12 text-center">
                     <h2>Skills</h2>
                     <hr class="star-primary">
                 </div>
@@ -100,7 +100,7 @@
             <div class="row">
                 <!-- -->
                 <div class="col-sm-12 portfolio-item" ng-repeat="item in portofolio" >
-                    <a href="" class="portfolio-link" data-toggle="modal" ng-init="visibil=false" ng-click="visibil=!visibil">
+                    <a href="" class="portfolio-link" data-toggle="modal" ng-click="item.visibility=!item.visibility">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -108,7 +108,7 @@
                         </div>
                         <img ng-src="{{item.imgsrc}}" class="img-responsive" alt="">
                     </a>
-                    <div collapse="visibil" ng-include="item.template">
+                    <div collapse="item.visibility" ng-include="item.template">
                         <hr>
                     </div>
                 </div>
