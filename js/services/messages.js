@@ -1,5 +1,5 @@
 app.factory('messages', ['$http', function($http) { 
-  return $http.get('http://localhost:63342/Grapher%20View/messages/messages.json') 
+  return $http.get('http://localhost:80/GrapherView/messages/messages.json') 
             .success(function(data) { 
               return data; 
             }) 

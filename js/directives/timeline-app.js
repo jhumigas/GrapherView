@@ -7,13 +7,13 @@ app.directive('timelineApp',['messages',function(messages) {
         scope.feeds= data;
       });
       scope.parity=function(test){
-        if (test % 2 == 0){
+        if (test % 2 === 0){
           return "timeline";
         }
         else{
            return "timeline-inverted";
         }
-      }
+      };
    
     }
   }; 

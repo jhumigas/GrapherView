@@ -24,8 +24,8 @@ app.controller('GrapherController',['$scope','$timeout' ,function ($scope,$timeo
     for(var item in $scope.portofolio){
       $scope.portofolio[item].visibility = true;
     }
-  }
-  $timeout(initialisation,500)
+  };
+  $timeout(initialisation,500);
     },
 
 ]);

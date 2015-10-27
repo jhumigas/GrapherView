@@ -1,0 +1,23 @@
+{
+  "name": "GrapherView",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jhumigas/GrapherView",
+  "authors": [
+    "jhumigas <jhumigas@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-charts": "~0.2.7",
+    "angular-chart": "~0.3.2",
+    "angular-chart.js": "~0.7.2",
+    "angular-bootstrap": "~0.13.0",
+    "angular": "~1.4.3"
+  }
+}
