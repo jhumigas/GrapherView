@@ -14,10 +14,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular-charts": "~0.2.7",
-    "angular-chart": "~0.3.2",
-    "angular-chart.js": "~0.7.2",
-    "angular-bootstrap": "~0.13.0",
-    "angular": "~1.4.3"
+    "angular-chart.js": "~0.8.6",
+    "angular-bootstrap": "~0.14.3",
+    "angular": "~1.4.8"
   }
 }

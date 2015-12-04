@@ -1,6 +1,12 @@
-app.directive('fxbetaApp',['$timeout',
-    function($timeout){
-    	return{
+(function(){
+    'use strict';
+    
+    angular
+        .module('GrapherApp')
+        .directive('fxbetaApp', fxbetaApp);
+        
+        function fxbetaApp($timeout){
+            return{
             scope:{},
     		templateUrl:'js/directives/fxbeta-app.html',
             link: function(scope,element,attrs){
@@ -92,5 +98,5 @@ app.directive('fxbetaApp',['$timeout',
           }
     		
     	}
-}
-])
+        }
+})();
