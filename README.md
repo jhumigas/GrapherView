@@ -2,7 +2,7 @@
 
 This is a little static application using AngularChart to draw fiew mathematical function. It was a project to get used to Angular's directives. 
 You can start using with wamp/mamp or phpstorm as you wish as it requires a local server running. 
-Just in case, check out if the url in js/services/messages.js is right for your local configuration
+The templates used can be found [here](http://startbootstrap.com/template-overviews/freelancer/), not made by me.
 
 
 
