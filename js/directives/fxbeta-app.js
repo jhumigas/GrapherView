@@ -10,7 +10,7 @@
             scope:{},
     		templateUrl:'js/directives/fxbeta-app.html',
             link: function(scope,element,attrs){
-                $timeout(function(){
+                //$timeout(function(){
                     scope.optionsChart = {
                         scaleShowVerticalLines: false,
                         scaleShowHorizontalLines: false,
@@ -92,7 +92,7 @@
                       scope.updateData();
                       scope.clearEquation();
                     };
-                },50);
+               // },50);
             
         			
           }

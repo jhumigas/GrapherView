@@ -10,7 +10,7 @@
                 scope:{},
                 templateUrl:'js/directives/fx-app.html',
                 link: function(scope,element,attrs){
-                    $timeout(function(){
+                    //$timeout(function(){
                         scope.optionsChart = {
                             scaleShowVerticalLines: false,
                             scaleShowHorizontalLines: false,
@@ -67,7 +67,7 @@
                         scope.updateLabels();
                         scope.updateData();
                         };
-                    },50);
+                    //},0);
                 
                         
             }

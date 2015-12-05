@@ -17,7 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/fx-app.css" rel="stylesheet">
     <link href="css/freelancer.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">
+    <!--<link href="css/timeline.css" rel="stylesheet">-->
     <link href="bower_components/angular-chart.js/dist/angular-chart.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="page-top" class="index" ng-app="GrapherApp"  ng-controller="GrapherController">
+<body id="page-top" class="index" ng-app="GrapherApp"  ng-controller="GrapherController as grapher">
     
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -99,7 +99,7 @@
             </div>
             <div class="row">
                 <!-- -->
-                <div class="col-sm-12 portfolio-item" ng-repeat="item in portofolio" >
+                <div class="col-sm-12 portfolio-item" ng-repeat="item in grapher.portofolio" >
                     <a href="" class="portfolio-link" data-toggle="modal" ng-click="item.visibility=!item.visibility">
                         <div class="caption">
                             <div class="caption-content">
@@ -108,7 +108,7 @@
                         </div>
                         <img ng-src="{{item.imgsrc}}" class="img-responsive" alt="">
                     </a>
-                    <div collapse="item.visibility" ng-include="item.template">
+                    <div uib-collapse="item.visibility" ng-include="item.template">
                         <hr>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
   <!-- -->
   <script src="js/app.js"></script>
   <script src="js/controllers/GrapherController.js"></script>
-  <script src="js/directives/timeline-app.js"></script>
+  <!--<script src="js/directives/timeline-app.js"></script>-->
   <script src="js/directives/fxbeta-app.js"></script>
   <script src="js/directives/fx-app.js"></script>
   <script src="js/services/messages.js"></script>
