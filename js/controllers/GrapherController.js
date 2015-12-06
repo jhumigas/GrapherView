@@ -21,13 +21,13 @@
               imgsrc: 'img/portfolio/circus.png',
               template: 'js/views/c.html',
               visibility: true
-            }/*,
+            },
             {
               link: '#portfolioModal2',
               imgsrc: 'img/portfolio/cake.png',
               template: 'js/views/b.html',
               visibility: true
-            }*/
+            }
             ];
             grapher.date = new Date();
             /*var initialisation = function(){
