@@ -36,7 +36,7 @@ The main directives are :
 
 * fx-app, that can draw up to one curve
 * fxbeta-app, that can draw n curves
-* timeline-app, to show message stores in a JSON format.
+* timeline-app, to show message stored in a JSON format.
 
 
 

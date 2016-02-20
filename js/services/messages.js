@@ -6,7 +6,7 @@
     .factory('messages', messages);
     
     function messages($http){
-        return $http.get('http://localhost:80/GrapherView/messages/messages.json') 
+        return $http.get('http://localhost:8888/GrapherView/messages/messages.json') 
             .success(function(data) { 
               return data; 
             }) 
